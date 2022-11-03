@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Poppins:wght@400;500;600&display=swap" 
+rel="stylesheet">
+<style>
+    *{
+        font-family: 'Poppins', sans-serif;
+    }
+    .h-font{
+        font-family: 'Merienda', cursive;
+    }
+    nav{
+    position: fixed;
+}
+body
+{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    background: url(img1.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+li, a, button
+{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgb(21, 21, 18);
+    text-decoration: none ;
+}
+header
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10px;
+}
+html
+{
+        scroll-behavior: smooth;
+}
+.logo
+{
+    cursor: pointer;
+    margin-right: auto;
+    margin-left: 10px;
+}
+.logo:hover
+{
+    filter: saturate(5);
+    transition: filter 0.4s ease-in-out;
+}
+.links
+{
+    list-style: none;
+}
+.links li
+{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.links li a
+{
+    transition: all 0.3s ease 0s;
+    color: rgb(92, 245, 247);
+
+}
+.links li a:hover
+{
+    color: rgb(17, 93, 217);
+}
+button
+{
+    background-color: rgba(36,160,237,0.4);
+    border: none;
+    padding: 9px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover
+{
+    background-color: rgb(123, 246, 232);
+}
+.container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search
+{
+    width: 100%;
+    max-width: 400px;
+    background: rgba(255,255,255,0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+    margin-top: 27%;
+}
+.search input
+{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 20px 20px;
+    font-size: 20px;
+    color: #92f2f9 ;
+}
+::placeholder
+{
+    color: azure;
+}
+.search button img
+{
+    width: 25px;
+}
+.search button
+{
+    border: none;
+    width: 73px;
+    height: 60px;
+    border-radius: 50%;
+    align-items: center;
+    cursor: pointer;
+}
+#about
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+#bottom
+{
+    margin: auto;
+}
+
+.wrapper .button{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 0 5px;
+    overflow: hidden;
+    background: rgb(92, 245, 247);
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-out;
+  }
+  .wrapper .button:hover{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    filter: saturate(20);
+  }
+  .wrapper .button .icon{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+  }
+  #tab
+  {
+    width: 100%;
+    
+  }
+  .main
+  {
+    color: rgb(92, 245, 247);
+    text-align:center;
+    font-size: 30px;
+    margin-bottom: 6px;
+    text-decoration-line: underline;
+    filter: saturate(20);
+  }
+  .small
+  {
+    color: rgb(92, 245, 247);
+    text-align: center;
+    font-size: small;
+    font-size: 20px;
+    margin: 5px;
+    filter: saturate(20);
+  }
+  .describe
+  {
+    color: rgb(92, 245, 247);
+    filter: saturate(20);
+  }
+  
+  .linkss
+  {
+    font-size: 20px;
+    color:rgb(92, 245, 247);
+    margin-top: 0px;
+    filter: saturate(20);
+  }
+
+  @media screen and (max-width600px)
+  {
+    
+   
+  }
+</style>
+</head>
+<body>
+<header>
+        <img class="logo" src="logo.png" alt="logo">
+        <nav class="navbar">
+                <ul class="links">
+                    <li><a href="#head">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="addproperty.php">Add a property</a></li>
+                    <li><a href="register.php"><button > Register </button></a></li>
+                    <li><a href="login.php"><button > Login </button></a></li>
+                </ul> 
+        </nav> 
+    </header>
+    <section id="head">
+        <div class="container">
+            <form action="" class="search">
+                <input type="text" placeholder="Search the location" name="">
+                <button type="submit"><a href="display.html"><img src="search.png"></a></button>
+            </form>
+        </div>
+    </section>
+    <section id="lists">
+        <div class="container">
+        </div>
+    </section>
+    <table id="tab" >
+        <tr>
+            <th>
+                <section id="about">
+                    <h1 id="headings">
+                        <img src="logo.png" alt="ghar bhada logo" id="bottom" class="logo">
+                    </h1>
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+                    <div class="wrapper">
+                      <div class="button">
+                         <div class="icon">
+                            <i class="fab fa-facebook-f"></i>
+                         </div>
+                         <span>Facebook</span>
+                      </div>
+                      <div class="button">
+                         <div class="icon">
+                            <i class="fab fa-twitter"></i>
+                         </div>
+                         <span>Twitter</span>
+                      </div>
+                      <div class="button">
+                         <div class="icon">
+                            <a href="www.instagram.com"><i class="fab fa-instagram"></i></a>
+                         </div>
+                         <span>Instagram</span>
+                      </div>
+                      <div class="button">
+                         <div class="icon">
+                            <a href="www.linkedin.com/in/rajiv-parajuli-39b449255"><i class="fab fa-linkedin"></i></a> 
+                         </div>
+                         <span>Linkedin</span>
+                      </div>
+                   </div>
+                </section>    
+            </th>
+            <th>
+                <p class="describe">Based on pokhara valley, Ghar Bhada is a Room rental webapp</p>
+                <p class="describe">that helps people find their desired accomodation.</p> 
+            </th>
+            <th>
+                <h2 class="main">Contact us</h1>
+                <p class="small">Masbar, Pokhara, Nepal</p>
+                <p class="small">9999999999</p> 
+                <p><a class="linkss" href="mailto: be2019ce11@gces.np">be2019ce11@gces.np</a></p>
+            </th>
+        </tr>
+    </table>
+    <script src="java.js"></script>
+
+
+
+
+
+
+
+<!--font-family: 'Merienda', cursive;
+font-family: 'Poppins', sans-serif;-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
